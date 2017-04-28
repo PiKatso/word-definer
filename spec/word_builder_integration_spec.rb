@@ -17,4 +17,11 @@ describe("index path", {:type => :feature}) do
     click_button('Submit')
     expect(page).to have_content("")
   end
+
+  it('visit home page and click on word link') do
+    visit('/')
+    click_on('hi')
+    expect(page).to have_content('Word hiDefinition hello Homepage')
+  end
+
 end
