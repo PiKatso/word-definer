@@ -1,39 +1,51 @@
-# <!--PROJECT NAME HERE-->
+# Word Definition Builder
 
-<!--PROJECT DESCRIPTION HERE-->
+This project essentially allows the user to create a dictionary of words and their corresponding definition. Allowing the user to see all words added and to click on a review them individually.
 
-### Prerequisites
-
-Web browser with ES6 compatibility
-Examples: Chrome, Safari
-
-Ruby <!--VERSION HERE-->
-Bundler
-
-### Installing
-
-Installation is quick and easy! First you can open this link <!--HEROKU LINK HERE--> to see the webpage in action live online. Or you can clone this repository to your machine, navigate to the file path in your terminal, and run 'app.rb' by typing '$ruby app.rb'. If you chose to clone the repository, after you run 'app.rb' you will need to copy the localhost path into your web browser. The standard localhost for Sinatra is port 4567
-
-## Built With
-
-* Ruby
-* Sinatra
-* HTML
-* CSS
-* Bootstrap https://getbootstrap.com/
-* ES6
-* Jquery https://jquery.com/
+### By _**Kat Gifford for Epicodus**_
 
 ## Specifications
 
-| behavior |  input   |  output  |
-|----------|:--------:|:--------:|
-<!--SPECS GO HERE-->
- 
-## Authors
+| Behavior | Input | Output |
+|----------|:-----:|:------:|
+| web app only accepts real text, no symbols or numbers | input: 'a$$'' | output: 'not a valid input' |
+| web app stores input for words and returns word | input: 'ruby' | output: 'an object oriented programing language' |
+| web app stores input for definition within word object | input: 'ruby : an object oriented programing language' | output: 'ruby' |
+| web app allows user to call stored definition | input: 'ruby' | output: 'ruby : an object oriented programing language' |
 
-* <!--YOUR NAME HERE-->
 
-## License
+_A user should be able to enter a Word and Definition and see a list of words they have created. They should be able to select the word and review the definition.
 
-Copyright © 2017 <!--YOUR NAME HERE-->
+_link to site on Github : https://github.com/PiKatso/word-definer
+
+_link to site on Heroku :
+
+## Setup/Installation Requirements
+
+* _clone to Git from Github_
+* _open containing directory using browser of choice_
+* _open index.html_
+
+## Known Bugs
+
+__
+
+## Support and contact details
+
+_submit pull request to Kat Gifford for issues_
+
+## Technologies Used
+
+* _Git_
+* _HTML_
+* _CSS_
+* _BOOTSTRAP_
+* _Ruby_
+* _Sinatra_
+* _Heroku_
+
+### License
+
+*MIT*
+
+Copyright (c) 2017 **_Kat Gifford & Epicodus_**

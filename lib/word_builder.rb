@@ -13,10 +13,12 @@ class Word
     @@word_array.push(self)
   end
 
+  #class method to display list/array of Word
   def Word.all
     @@word_array
   end
 
+  #class method to clear list/array of Word
   def Word.clear
     @@word_array = []
   end
@@ -36,5 +38,4 @@ class Definition
   def initialize(string)
     self.definition = string
   end
-
 end

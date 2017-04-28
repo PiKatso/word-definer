@@ -3,9 +3,9 @@ require "rspec"
 require "pry"
 
 describe Word do
-  # before() do
-  #   Word.clear()
-  # end
+  before() do
+    Word.clear()
+  end
 
   describe '#initialize' do
     it"initializes the Word object & attributes, returning name" do
