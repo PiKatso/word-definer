@@ -16,6 +16,10 @@ class Word
   def Word.all
     @@word_array
   end
+
+  def Word.clear
+    @@word_array = []
+  end
 end
 
 class Name

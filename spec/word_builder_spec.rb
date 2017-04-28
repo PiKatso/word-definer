@@ -30,9 +30,11 @@ describe Word do
     expect(Word.all).to(eq([test_word]))
   end
 
-  # describe "#clear"
-  #   it "" do
-  #     expect(Word.clear).to(eq([]))
-  #   end
+  describe "#clear"
+  it "clears word of array" do
+    test_word = Word.new({:name => "ruby", :definition => "object oriented programing language"})
+    test_word.save
+    expect(Word.clear).to(eq([]))
+  end
 
 end
