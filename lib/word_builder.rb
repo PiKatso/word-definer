@@ -24,6 +24,16 @@ class Word
   end
 end
 
+def Word.find(word_input)
+  Word.all.each do |word|
+    if word.name.name == word_input
+      return word
+    else
+      "That word has not yet been defined in your dictionary"
+    end
+  end
+end
+
 class Name
   attr_accessor :name
 

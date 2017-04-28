@@ -22,3 +22,8 @@ post('/word/new-word') do
   new_word.save
   erb(:success)
 end
+
+get('/word/:name') do
+  @word = Word.find(params.fetch('name'))
+  erb(:definition)
+end
