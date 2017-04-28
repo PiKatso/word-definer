@@ -1,6 +1,8 @@
 <h1>Your study dictionary</h1>
 
 <ul>
-
+  <% @output.each do |word|%>
+  <li><a href="word/<%= word.name.name %>"><%= word.name.name %></a></li>
+  <% end %>
 </ul>
 <a href="/word/add-word" class="btn">Add</a>
