@@ -9,6 +9,13 @@ class Word
     self.definition = Definition.new(attribute.fetch(:definition))
   end
 
+  def save
+    @@word_array.push(self)
+  end
+
+  def Word.all
+    @@word_array
+  end
 end
 
 class Name

@@ -13,6 +13,13 @@ describe Word do
       test_word = Word.new({:name => "ruby", :definition => "object oriented programing language"})
       expect(test_word.definition.definition).to(eq("object oriented programing language"))
     end
-
   end
+
+  describe "#save"
+  it "saves word to array of words" do
+    test_word = Word.new({:name => "ruby", :definition => "object oriented programing language"})
+    test_word.save
+    expect(Word.all).to(eq([test_word]))
+  end
+
 end
