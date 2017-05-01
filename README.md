@@ -18,7 +18,7 @@ _A user should be able to enter a Word and Definition and see a list of words th
 
 _link to site on Github : https://github.com/PiKatso/word-definer
 
-_link to site on Heroku :
+_link to site on Heroku : https://serene-earth-67335.herokuapp.com/word/add-word
 
 ## Setup/Installation Requirements
 
